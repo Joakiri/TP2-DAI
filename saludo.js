@@ -1,4 +1,4 @@
 function saludar(nombre) {
     return `Hola, ${nombre}! Bienvenido a Node.js.`;
 }
-export { saludar }; 
+export default saludar ;
