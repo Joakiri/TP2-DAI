@@ -16,7 +16,7 @@ const mensaje = cowsay.say({
 });
 console.log(mensaje);
 
-import  saludar  from './ej01.js';
+import  saludar  from './modules/ej01.js';
 const mensajeSaludo = saludar('Fifquin');
 console.log(mensajeSaludo);
 
@@ -31,13 +31,15 @@ console.log(sumar);
 console.log(restar);
 console.log(multiplicar);
 console.log(dividir);
-import Alumno from './alumno.js';
+import Alumno from './modules/alumno.js';
 
 const alumno1 = new Alumno("Juan", 12345678);
 const alumno2 = new Alumno("Ana", 87654321);
 
 console.log(alumno1);
 console.log(alumno2);
+
+
 import fss from 'fs';
 function copiar(origen, destino) {
     const contenido = fss.readFileSync(origen, "utf8");
@@ -47,5 +49,10 @@ copiar("./entrada.txt", "./hastaLuegoCabo.txt");
 
 import { parsearUrl } from "./modules/url.js";
 
-let datos = parsearUrl("https://www.ejemplo.com/productos?id=10&cat=ropa");
+let datos = parsearUrl("xddd");
 console.log(datos);
+
+import { obtenerMoneda } from './modules/moneda.js';
+let moneda = obtenerMoneda("GH");
+
+console.log(moneda);

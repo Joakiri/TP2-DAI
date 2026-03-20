@@ -11,6 +11,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "country-to-currency": "^2.0.3",
     "cowsay": "^1.6.0"
   }
 }
